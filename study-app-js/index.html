@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>学習記録アプリ</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form action="#">
+        <div class="form">
+          <label>学習内容</label>
+          <input id="content" type="text" />
+        </div>
+        <div class="form">
+          <label>学習時間</label>
+          <input id="time" type="number" />
+        </div>
+      </form>
+
+      <div>
+        <p>時間</p>
+        <div>入力されている学習内容：<span id="study-content"></span></div>
+        <div>入力されている時間： <span id="study-time"></span>時間</div>
+      </div>
+
+      <div id="record-results">
+        <!-- <p class="record">勉強内容 11時間</p>
+        <p class="record">React 2時間</p> -->
+      </div>
+
+      <div id="btn-valid">
+        <button id="btn">登録</button>
+        <p id="error">入力されていない項目があります</p>
+      </div>
+
+      <div>
+        <p>合計時間： <span id="total-time">0</span> / 1000 (h)</p>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
